@@ -1,0 +1,12 @@
+services:
+  runner:
+    build:
+      context: ./model-runner
+      dockerfile: Dockerfile
+    environment:
+      - MODELS_PATH=/models
+      - MODEL_RUNNER_SOCK=/models/model-runner.sock
+    volumes:
+      - ./models:/models
+    ports:
+      - "12434:12434"

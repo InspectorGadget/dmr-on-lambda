@@ -1,0 +1,10 @@
+POST https://cnrmjwq2bqemxtkuiibt3rdktm0fyfxn.lambda-url.ap-southeast-1.on.aws/engines/llama.cpp/v1/chat/completions
+Content-Type: application/json
+
+{
+    "model": "inspectorgadget12/tinyllama:Q4_K_M",
+    "messages":[
+        {"role":"user","content":"Say hi in one sentence."}
+    ],
+    "max_tokens": 64
+}
